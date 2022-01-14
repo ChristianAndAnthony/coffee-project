@@ -1,9 +1,27 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+/*table {*/
+/*    border-collapse: collapse;*/
+/*    margin: 15px 0;*/
+/*}*/
+
+/*td, th {*/
+/*    border: 1px solid black;*/
+/*    padding: 5px 10px;*/
+/*}*/
+
+#main-heading{
+    text-align: center;
+    margin: 0 50px;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.coffee{
+    display: flex;
+    align-items: baseline;
+
 }
+
+/*.roast{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    margin-left: 1em;*/
+/*}*/
