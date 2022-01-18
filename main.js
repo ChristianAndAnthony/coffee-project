@@ -51,9 +51,9 @@ var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var searchBar = document.querySelector('#coffee-name');
-var addCoffee = document.querySelector('#add-coffee')
+// var addCoffee = document.querySelector('#add-coffee')
 var submitCoffee = document.querySelector('#submit-coffee')
-var addRoast = document.querySelector('#add-roast')
+// var addRoast = document.querySelector('#add-roast')
 
 searchBar.addEventListener("keyup", e => {
     const searchString = e.target.value;
@@ -67,8 +67,8 @@ searchBar.addEventListener("keyup", e => {
 });
 
 // submitCoffee.addEventListener("click", e => {
-//         addCoffee.value
-//         addRoast.value
+//         var addCoffee = document.querySelector('#add-coffee')
+//         var addRoast = document.querySelector('#add-roast')
 //     });
 //     tbody.innerHTML = renderCoffees(filteredNames);
 // });
