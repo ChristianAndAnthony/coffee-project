@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url("assets/image.jpeg");
+    background-size: cover;
+}
+
 #main-heading{
     text-align: center;
     margin: 0 50px;
@@ -20,7 +25,8 @@
 #coffees {
     display: flex;
     flex-wrap: wrap;
-    /*max-width: 50%;*/
+    font-family: Merriweather;
+    color: white;
 }
 
 .coffee{
@@ -39,4 +45,39 @@
     /*flex-direction: row;*/
     /*align-items: center;*/
     margin-left: 10px;
+}
+
+#title{
+    font-family: Merriweather;
+    font-size: 50px;
+    color: white;
+}
+
+#add-coffee-header{
+    font-family: Merriweather;
+    color: white;
+
+}
+
+#submit{
+    background-color: #3b7ca0;
+    font-family: 'Barlow Condensed';
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+#submit-coffee {
+    background-color: #3b7ca0;
+    font-family: 'Barlow Condensed';
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.input-font{
+    font-family: 'Barlow Condensed';
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
