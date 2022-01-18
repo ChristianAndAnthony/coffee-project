@@ -90,13 +90,6 @@ tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 
-// console.log(coffees[i].roast);
-
-
-    // for (var i = 0; i <= coffees.length - 1; i++) {
-    //     console.log(coffees[i].roast)
-    // }
-
 
 
 
