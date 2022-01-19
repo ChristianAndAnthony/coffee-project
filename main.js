@@ -23,7 +23,7 @@ function updateCoffees(e) {
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast) {
+        if (coffee.roast === selectedRoast || selectedRoast === "all") {
             filteredCoffees.push(coffee);
         }
     });
@@ -51,12 +51,12 @@ var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var searchBar = document.querySelector('#coffee-name');
-// var addCoffee = document.querySelector('#add-coffee')
+var addCoffee = document.querySelector('#add-coffee')
 var submitCoffee = document.querySelector('#submit-coffee')
-// var addRoast = document.querySelector('#add-roast')
+var addRoast = document.querySelector('#add-roast')
 
 searchBar.addEventListener("keyup", e => {
-    const searchString = e.target.value;
+    const searchString = e.target.value.toLowerCase();
     const filteredNames = coffees.filter(coffee => {
         return (
             coffee.name.toLowerCase().includes(searchString) ||
@@ -66,12 +66,14 @@ searchBar.addEventListener("keyup", e => {
     tbody.innerHTML = renderCoffees(filteredNames);
 });
 
-// submitCoffee.addEventListener("click", e => {
-//         var addCoffee = document.querySelector('#add-coffee')
-//         var addRoast = document.querySelector('#add-roast')
-//     });
-//     tbody.innerHTML = renderCoffees(filteredNames);
-// });
+// function addNewCoffee (coffee) {
+//     var selectedRoast = addRoast.value;
+//     var searchString = addCoffee.value
+//     var filteredCoffees = [];
+//     if (searchString === "string"){
+//         coffees.push(coffee);
+//     }
+// }
 
 // function search (e) {
 //     var searchName = searchBar.value;
@@ -86,6 +88,9 @@ searchBar.addEventListener("keyup", e => {
 // }
 
 tbody.innerHTML = renderCoffees(coffees);
+roastSelection.addEventListener("change",updateCoffees);
+// submitCoffee.addEventListener("submit",addNewCoffee);
+// addRoast.addEventListener("submit",addNewCoffee);
 
 
 submitButton.addEventListener('click', updateCoffees);
